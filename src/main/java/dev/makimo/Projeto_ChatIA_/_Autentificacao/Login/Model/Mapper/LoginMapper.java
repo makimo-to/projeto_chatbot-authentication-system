@@ -14,6 +14,7 @@ import java.util.List;
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
 public interface LoginMapper {
     @Mapping(target = "id",ignore = true)
+    @Mapping(target = "senha",ignore = true)
 
     // Request -> Entity
     LoginModel toEntity(LoginRequest loginRequest);
