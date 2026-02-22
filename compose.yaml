@@ -7,4 +7,4 @@ services:
       - 'MYSQL_ROOT_PASSWORD=${DOCKER_ROOT}'
       - 'MYSQL_USER=${DOCKER_USERNAME}'
     ports:
-      - '3306'
+      - '3306:3306'
